@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>PONG - Andre Ricardo Cintra</title>
+        <script>
+            var screenWidth = 400;
+            var screenHeight = 300;
+            
+            var p1Score = 0;
+            var p2Score = 0;
+        </script>
+        <script type="text/javascript" src="https://rawgithub.com/craftyjs/Crafty/release/dist/crafty-min.js"></script>
+        <script type="text/javascript" src="js/ball.js"></script>
+        <script type="text/javascript" src="js/border.js"></script>
+        <script type="text/javascript" src="js/goal.js"></script>  
+        <script type="text/javascript" src="js/palette.js"></script>
+        <script type="text/javascript" src="js/shot.js"></script>      
+    </head>
+    <body>
+        <div id="gameScreen" style="border: 1px solid black"></div>
+        <script type="text/javascript">
+            Crafty.init(400, 300, document.getElementById("gameScreen"));                            
+        </script>
+        <script type="text/javascript" src="js/init.js"></script>
+        <div id="scoreScreen" style="width: 400px; text-align:center; font-weight: bold;">P1 0 x 0 P2</div>
+    </body>
+</html>
