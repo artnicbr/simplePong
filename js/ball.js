@@ -36,12 +36,12 @@ Crafty.c("Ball", {
                     //so it goes to the right
                     var newAngle = ((Math.random() * 1000) % 60) + 1;
                     if (newAngle < 30)
-                        newAngle = 360 - ((Math.PI / 2) - newAngle)
+                        newAngle = 360 - newAngle;
                 }
                 //moves to the right
                 else {
-                    var newAngle = 60 + (((Math.random() * 1000) % 60) + 1);
-                    newAngle = (Math.PI / 2) + newAngle;
+                    var newAngle = ((Math.random() * 1000) % 60) + 1;
+                    newAngle = 150 + newAngle;
                 }
                 console.log(newAngle);
                 this.angle = newAngle;
@@ -73,7 +73,7 @@ Crafty.c("Ball", {
             this.speed = 2;
             this.angle = parseInt(((Math.random() * 10000) % 360)) + 1;
 
-            while (this.angle == 90 || this.angle == 270)
+            while ( (this.angle > 30 && this.angle < 150) || (this.angle > 210 && this.angle < 330) )
                 this.angle = parseInt(((Math.random() * 10000) % 360)) + 1;
         }
     },
