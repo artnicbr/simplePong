@@ -1,7 +1,7 @@
 simplePong
 ==========
 
-Simple PONG game. Perfect to who wants to learn Crafty JS framework.
+Simple PONG game. Perfect for those who want to learn Crafty JS framework.
 
 OBJECTIVES  
 Learn and test Crafty JS framework tools and functionalities.
