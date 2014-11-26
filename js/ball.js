@@ -1,3 +1,8 @@
+/* Angle growing orientation
+*		270
+*	180		0
+*		90
+*/
 Crafty.c("Ball", {
     width: 10,
     height: 10,
